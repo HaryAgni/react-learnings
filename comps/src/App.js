@@ -1,21 +1,27 @@
-import { GoBell, GoDatabase } from "react-icons/go";
-import Button from "./components/Button";
+import Accordion from "./components/Accordion";
 
 function App() {
+    const items = [
+        {
+            label : 'ishdifuiuhdfiuhdfiug',
+            content:'82384798327984739874i',
+            id:'1'
+        },
+        {
+            label : 'iodnriugeiufoi',
+            content:'9390920',
+            id:'2'
+        },
+        {
+            label : 'ishdifuiuhkjcfniugudfiuhdfiug',
+            content:'6532222223',
+            id:'3'
+        },
+
+    ]
   return (
     <div>
-      <div>
-        <Button className="mb-5" primary rounded>
-          <GoBell />
-          Click!
-        </Button>
-      </div>
-      <div>
-        <Button secondary>
-          <GoDatabase />
-          Buy
-        </Button>
-      </div>
+     <Accordion items={items} />
     </div>
   );
 }
