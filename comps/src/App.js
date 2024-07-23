@@ -1,27 +1,11 @@
-import Accordion from "./components/Accordion";
+import Dropdown from "./components/Dropdown";
 
 function App() {
-    const items = [
-        {
-            label : 'ishdifuiuhdfiuhdfiug',
-            content:'82384798327984739874i',
-            id:'1'
-        },
-        {
-            label : 'iodnriugeiufoi',
-            content:'9390920',
-            id:'2'
-        },
-        {
-            label : 'ishdifuiuhkjcfniugudfiuhdfiug',
-            content:'6532222223',
-            id:'3'
-        },
+  const options = [{ label: "Red", value: "red" }, {label: "Green", value: "ged" }, {label: "Blue", value: "blue" }];
 
-    ]
   return (
     <div>
-     <Accordion items={items} />
+      <Dropdown options={options} />
     </div>
   );
 }
