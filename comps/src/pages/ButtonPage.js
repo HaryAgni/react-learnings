@@ -11,7 +11,25 @@ function ButtonPage() {
         </Button>
       </div>
       <div>
-        <Button secondary>
+        <Button className="mb-5" secondary>
+          <GoDatabase />
+          Buy
+        </Button>
+      </div>
+      <div>
+        <Button className="mb-5" warning>
+          <GoDatabase />
+          Buy
+        </Button>
+      </div>
+      <div>
+        <Button className="mb-5" success>
+          <GoDatabase />
+          Buy
+        </Button>
+      </div>
+      <div>
+        <Button className="mb-5" danger>
           <GoDatabase />
           Buy
         </Button>
