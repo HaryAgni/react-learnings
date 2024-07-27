@@ -1,5 +1,4 @@
 import { FaApple } from "react-icons/fa6";
-import Table from "../components/Table";
 import {
   GiBanana,
   GiBerryBush,
@@ -14,6 +13,7 @@ import {
   GiWatermelon,
 } from "react-icons/gi";
 import { BiLemon } from "react-icons/bi";
+import SortableTable from "../components/SortableTable";
 
 function TablePage() {
   const data = [
@@ -104,7 +104,11 @@ function TablePage() {
         <fruit.fruit className={`w-10 h-10 text${fruit.color}`} />
       ),
     },
-    { label: "Name", render: (fruit) => fruit.name },
+    {
+      label: "Name",
+      render: (fruit) => fruit.name,
+      sortValue: (fruit) => fruit.name,
+    },
     {
       label: "Color",
       render: (fruit) => <div className={`p-3 m-2 bg${fruit.color}`}></div>,
@@ -112,7 +116,7 @@ function TablePage() {
     {
       label: "Score",
       render: (fruit) => fruit.score,
-      header: () => <th className="bg-red-500">Score</th>,
+      sortValue: (fruit) => fruit.score,
     },
   ];
 
@@ -122,7 +126,7 @@ function TablePage() {
 
   return (
     <div>
-      <Table data={data} config={config} keyFn={keyFn} />
+      <SortableTable data={data} config={config} keyFn={keyFn} />
     </div>
   );
 }
