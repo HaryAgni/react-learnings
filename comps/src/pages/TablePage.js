@@ -19,79 +19,92 @@ function TablePage() {
   const data = [
     {
       name: "Apple",
-      color: "-red-500",
+      color: "text-red-500",
+      bgColor: "bg-red-500",
       score: 7,
       fruit: FaApple,
     },
     {
       name: "Banana",
-      color: "-yellow-500",
+      color: "text-yellow-400",
+      bgColor: "bg-yellow-400",
       score: 5,
       fruit: GiBanana,
     },
     {
       name: "Grapes",
-      color: "-purple-500",
+      color: "text-green-300",
+      bgColor: "bg-green-300",
       score: 8,
       fruit: GiGrapes,
     },
     {
       name: "Orange",
-      color: "-orange-500",
+      color: "text-orange-500",
+      bgColor: "bg-orange-500",
       score: 6,
       fruit: GiOrange,
     },
     {
       name: "Blueberry",
-      color: "-blue-500",
+      color: "text-blue-500",
+      bgColor: "bg-blue-500",
       score: 9,
       fruit: GiBerryBush,
     },
     {
       name: "Lemon",
-      color: "-yellow-300",
+      color: "text-yellow-300",
+      bgColor: "bg-yellow-300",
       score: 4,
       fruit: BiLemon,
     },
     {
       name: "Strawberry",
-      color: "-red-400",
+      color: "text-red-400",
+      bgColor: "bg-red-400",
       score: 7,
       fruit: GiStrawberry,
     },
     {
       name: "Kiwi",
-      color: "-green-500",
+      color: "text-green-400",
+      bgColor: "bg-green-400",
       score: 6,
       fruit: GiKiwiFruit,
     },
     {
       name: "Watermelon",
-      color: "-green-600",
+      color: "text-green-600",
+      bgColor: "bg-green-600",
       score: 8,
       fruit: GiWatermelon,
     },
     {
       name: "Mango",
-      color: "-yellow-600",
+      color: "text-yellow-600",
+      bgColor: "bg-yellow-600",
       score: 9,
       fruit: GiFruitBowl,
     },
     {
       name: "Pineapple",
-      color: "-yellow-400",
+      color: "text-yellow-400",
+      bgColor: "bg-yellow-400",
       score: 7,
       fruit: GiPineapple,
     },
     {
       name: "Cherry",
-      color: "-red-600",
+      color: "text-red-600",
+      bgColor: "bg-red-600",
       score: 5,
       fruit: GiCherry,
     },
     {
       name: "Peach",
-      color: "-pink-400",
+      color: "text-pink-400",
+      bgColor: "bg-pink-400",
       score: 6,
       fruit: GiPeach,
     },
@@ -101,7 +114,7 @@ function TablePage() {
     {
       label: "Fruit",
       render: (fruit) => (
-        <fruit.fruit className={`w-10 h-10 text${fruit.color}`} />
+        <fruit.fruit className={`w-10 h-10 ${fruit.color}`} />
       ),
     },
     {
@@ -111,7 +124,7 @@ function TablePage() {
     },
     {
       label: "Color",
-      render: (fruit) => <div className={`p-3 m-2 bg${fruit.color}`}></div>,
+      render: (fruit) => <div className={`p-3 m-2 ${fruit.bgColor}`}></div>,
     },
     {
       label: "Score",
