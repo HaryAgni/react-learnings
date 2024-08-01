@@ -7,10 +7,9 @@ import DropdownPage from "./pages/DropdownPage";
 import ModalPage from "./pages/ModalPage";
 import TablePage from "./pages/TablePage";
 
-
 function App() {
   return (
-    <div className="container mx-auto grid grid-cols-6 gap-4 mt-4 ">
+    <div className="container mx-auto grid grid-cols-6 gap-4 mt-4 px-8">
       <Sidebar />
       <div className=" col-span-5 ">
         <Route path="/accordion">
