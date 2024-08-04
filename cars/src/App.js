@@ -8,8 +8,8 @@ function App() {
     <div>
       <CarForm />
       <CarList />
-      <CarSearch/>
-      <CarValue/>
+      <CarSearch />
+      <CarValue />
     </div>
   );
 }
