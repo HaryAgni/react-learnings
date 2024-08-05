@@ -1,5 +1,10 @@
 {
-    "users":[],
-    "albums":[],
-    "photos":[]
-}
+    "users": [
+      {
+        "id": 1,
+        "name": "Jon Snow"
+      }
+    ],
+    "albums": [],
+    "photos": []
+  }
