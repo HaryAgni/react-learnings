@@ -1,18 +1,14 @@
 {
   "users": [
     {
-      "id": "7057",
+      "id": 1,
       "name": "Mr. Dean Stanton"
-    },
-    {
-      "id": "17fe",
-      "name": "Donnie Reichert"
-    },
-    {
-      "id": "3fb9",
-      "name": "Dr. Sergio Daniel"
     }
   ],
-  "albums": [],
+  "albums": [{
+    "id":10,
+    "title": "Hiking Trip",
+    "userId": 1
+  }],
   "photos": []
 }
