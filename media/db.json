@@ -3,12 +3,92 @@
     {
       "id": 1,
       "name": "Mr. Dean Stanton"
+    },
+    {
+      "id": "00cc",
+      "name": "Terry Schumm Sr."
+    },
+    {
+      "id": "85a0",
+      "name": "Kevin Rutherford"
     }
   ],
-  "albums": [{
-    "id":10,
-    "title": "Hiking Trip",
-    "userId": 1
-  }],
+  "albums": [
+    {
+      "id": 10,
+      "title": "Hiking Trip",
+      "userId": 1
+    },
+    {
+      "id": "31bb",
+      "userId": 1,
+      "title": "Practical Soft Towels"
+    },
+    {
+      "id": "f923",
+      "userId": 1,
+      "title": "Gorgeous Fresh Chicken"
+    },
+    {
+      "id": "0790",
+      "userId": 1,
+      "title": "Small Bronze Tuna"
+    },
+    {
+      "id": "161d",
+      "userId": 1,
+      "title": "Luxurious Fresh Cheese"
+    },
+    {
+      "id": "180d",
+      "userId": 1,
+      "title": "Rustic Rubber Ball"
+    },
+    {
+      "id": "881b",
+      "userId": 1,
+      "title": "Recycled Bronze Shirt"
+    },
+    {
+      "id": "ffd9",
+      "userId": 1,
+      "title": "Luxurious Fresh Computer"
+    },
+    {
+      "id": "6780",
+      "userId": "00cc",
+      "title": "Modern Frozen Hat"
+    },
+    {
+      "id": "62e0",
+      "userId": "00cc",
+      "title": "Ergonomic Fresh Fish"
+    },
+    {
+      "id": "7600",
+      "userId": "00cc",
+      "title": "Refined Steel Hat"
+    },
+    {
+      "id": "ee76",
+      "userId": "85a0",
+      "title": "Elegant Cotton Chips"
+    },
+    {
+      "id": "8a62",
+      "userId": "85a0",
+      "title": "Luxurious Granite Mouse"
+    },
+    {
+      "id": "f128",
+      "userId": "00cc",
+      "title": "Awesome Frozen Towels"
+    },
+    {
+      "id": "27b8",
+      "userId": 1,
+      "title": "Handcrafted Granite Mouse"
+    }
+  ],
   "photos": []
 }
