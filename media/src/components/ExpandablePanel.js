@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import { useState } from "react";
 import { GoChevronDown, GoChevronLeft } from "react-icons/go";
 
@@ -6,9 +7,12 @@ function ExpandablePanel({ header, children }) {
   const handleClick = () => {
     setExpaded(!expanded);
   };
+  const headerClassNames = classNames("mb-2 border rounded", {
+    "bg-blue-500": expanded,
+  });
   return (
     <div>
-      <div className="mb-2 border rounded">
+      <div className={headerClassNames}>
         <div className="flex p-2 justify-between items-center ">
           <div className="flex flex-row items-center justify-between">
             {header}
@@ -18,7 +22,9 @@ function ExpandablePanel({ header, children }) {
           </div>
         </div>
       </div>
-      {expanded && <div className="p-2 border-t">{children}</div>}
+      {expanded && (
+        <div className="p-2 border-t px-20 bg-gray-100">{children}</div>
+      )}
     </div>
   );
 }

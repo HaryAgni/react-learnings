@@ -26,25 +26,24 @@ function UsersList() {
 
   if (isLoadingUsers) {
     content = <Skeleton className="h-10 w-full" times={6} />;
-  }
-  else if (loadingUsersError || creatingUserError) {
+  } else if (loadingUsersError || creatingUserError) {
     content = <div>Error fetching data</div>;
-  }
-  else {
-    content =  data.map((user) => {
-        return <UsersListItem key={user.id} user={user} />
-       
-      });
+  } else {
+    content = data.map((user) => {
+      return <UsersListItem key={user.id} user={user} />;
+    });
   }
 
   return (
     <div>
       <div className="flex flex-row justify-between items-center m-3">
         <h1 className="m-2 text-xl">Users</h1>
-      
-          <Button loading={isCreatingUser} onClick={handleUserAdd}>+ Add User</Button>
+
+        <Button loading={isCreatingUser} onClick={handleUserAdd}>
+          + Add User
+        </Button>
       </div>
-      { content}
+     {content}
     </div>
   );
 }
